@@ -60,6 +60,22 @@
       font-size: 13px;
       opacity: 0.7;
     }
+.wave-text {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff4d4d, #ffd11a, #4dff4d, #1ad1ff, #ff4dff, #ff4d4d);
+  background-size: 1200% 1200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wave 6s ease infinite;
+}
+
+@keyframes wave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
   </style>
 </head>
 <body>
@@ -67,7 +83,7 @@
 
   <div class="container">
     <img class="avatar" src="avatar.jpg" alt="Avatar">
-    <h1>Đô Store</h1>
+    <h1 class="wave-text">Đô Store</h1>
     <h2>Trần Ngọc Đô</h2>
 
     <div class="info">
