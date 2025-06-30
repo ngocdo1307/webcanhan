@@ -63,21 +63,22 @@
 .wave1 {
   font-size: 48px;
   font-weight: bold;
-  background: linear-gradient(270deg, #ff4d4d, #ffd11a, #4dff4d, #1ad1ff, #ff4dff, #ff4d4d);
-  background-size: 1200% 1200%;
+  background: linear-gradient(
+    270deg,
+    #ff0000,   /* đỏ */
+    #ff8000,   /* cam */
+    #ffff00,   /* vàng */
+    #80ff00,   /* xanh lá non */
+    #00ffff,   /* xanh ngọc */
+    #0040ff,   /* xanh đậm */
+    #8000ff,   /* tím */
+    #ff00ff,   /* hồng tím */
+    #ff0000    /* quay về đỏ để liền mạch */
+  );
+  background-size: 1800% 1800%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: wave1 3s ease infinite;
-}
-
-.wave2 {
-  font-size: 32px;
-  font-weight: bold;
-  background: linear-gradient(270deg, #00ffff, #00ff99, #66ff66, #99ff00, #00ffff);
-  background-size: 1200% 1200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: wave2 4s ease infinite;
+  animation: wave1 4s ease infinite;
 }
 
 @keyframes wave1 {
@@ -85,13 +86,30 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
+.wave2 {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(
+    270deg,
+    #00ffff,
+    #00ff99,
+    #66ff66,
+    #99ff00,
+    #ffff00,
+    #ff6600,
+    #ff00ff,
+    #00ffff
+  );
+  background-size: 1800% 1800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wave2 5s ease infinite;
+}
 @keyframes wave2 {
   0% { background-position: 100% 50%; }
   50% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
 }
-
   </style>
 </head>
 <body>
