@@ -60,20 +60,36 @@
       font-size: 13px;
       opacity: 0.7;
     }
-.wave-text {
+.wave1 {
   font-size: 48px;
   font-weight: bold;
   background: linear-gradient(270deg, #ff4d4d, #ffd11a, #4dff4d, #1ad1ff, #ff4dff, #ff4d4d);
   background-size: 1200% 1200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: wave 3s ease infinite;
+  animation: wave1 3s ease infinite;
 }
 
-@keyframes wave {
+.wave2 {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(270deg, #00ffff, #00ff99, #66ff66, #99ff00, #00ffff);
+  background-size: 1200% 1200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wave2 4s ease infinite;
+}
+
+@keyframes wave1 {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+@keyframes wave2 {
+  0% { background-position: 100% 50%; }
+  50% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
   </style>
@@ -83,8 +99,8 @@
 
   <div class="container">
     <img class="avatar" src="avatar.jpg" alt="Avatar">
-    <h1 class="wave-text">Đô Store</h1>
-    <h2 class="wave-text">Trần Ngọc Đô</h2>
+    <h1 class="wave1">Đô Store</h1>
+    <h2 class="wave2">Trần Ngọc Đô</h2>
 
     <div class="info">
       <p><strong>📞 SĐT:</strong> <a href="tel:0333222528">0333222528</a></p>
