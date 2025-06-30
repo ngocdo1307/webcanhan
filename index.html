@@ -65,25 +65,26 @@
   font-weight: bold;
   background: linear-gradient(
     270deg,
-    #ff0000,   /* đỏ */
-    #ff8000,   /* cam */
-    #ffff00,   /* vàng */
-    #80ff00,   /* xanh lá non */
-    #00ffff,   /* xanh ngọc */
-    #0040ff,   /* xanh đậm */
-    #8000ff,   /* tím */
-    #ff00ff,   /* hồng tím */
-    #ff0000    /* quay về đỏ để liền mạch */
+    #ff0000,
+    #ff8000,
+    #ffff00,
+    #80ff00,
+    #00ffff,
+    #0040ff,
+    #8000ff,
+    #ff00ff,
+    #ff0000
   );
-  background-size: 1800% 1800%;
+  background-size: 800% 800%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: wave1 4s ease infinite;
+  animation: wave1 8s linear infinite;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
 @keyframes wave1 {
   0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  50% { background-position: 100% 52%; }
   100% { background-position: 0% 50%; }
 }
 .wave2 {
